@@ -4,6 +4,37 @@ import java.util.Scanner;
 
 public class StringStudy1 {
 
+	public void splitTest() {
+		String name = "jh, bp, ld, babo";
+		String[] names = name.split(",");
+
+		for (int i = 0; i < names.length; i++) {
+			System.out.println(names[i].trim());
+		}
+	}
+
+	public void trimTest() {
+		String title = "    West Side Story ";
+		String result = title.trim();
+		System.out.println(result);
+	}
+
+	public void caseTest() {
+		String title = "West Side Story";
+		String result = title.toLowerCase();
+		String result2 = title.toUpperCase();
+		System.out.println(result);
+		System.out.println(result2);
+	}
+
+	public void replaceTest() {
+		String title = "West Side Story";
+		String result = title.replace('S', 't');
+		System.out.println(title);
+		System.out.println(result);
+
+	}
+
 	public void subStringEx1() {
 
 //		String[] image = new String[] { "jpg", "gif", "png" };
