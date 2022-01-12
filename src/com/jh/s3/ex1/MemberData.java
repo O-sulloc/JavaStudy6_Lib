@@ -21,14 +21,21 @@ public class MemberData {
 		// data에 있는 문자열을 StringTokenizer로 파싱해서
 		// 멤버dto를 생성해서 멤버 변수 값으로 대입
 		// 멤버dto들을 AL에 담아서 리턴해라
-		StringTokenizer mdto = new StringTokenizer(data, "-");
+		StringTokenizer st = new StringTokenizer(this.data, "-");
+		ArrayList<MemberDTO> ar = new ArrayList<>();
 
-		while (mdto.hasMoreTokens()) {
-			MemberDTO mdto2 = new MemberDTO();
-			String token = mdto2.nextToken();
+		while (st.hasMoreTokens()) {
+			MemberDTO mdto = new MemberDTO();
+			mdto.setId(st.nextToken().trim());
+			mdto.setPw(st.nextToken().trim());
+			mdto.setName(st.nextToken().trim());
+			mdto.setEmail(st.nextToken().trim());
+			mdto.setAge(Integer.parseInt(st.nextToken().trim()));
 
+			ar.add(mdto);
 		}
-		return null;
+
+		return ar;
 	}
 
 }
