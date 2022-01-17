@@ -12,6 +12,5 @@ public class StudentData {
 		this.info = this.info + "name3,3,20,30,40,";
 
 	}
-	public ArrayList<SD>
 
 }

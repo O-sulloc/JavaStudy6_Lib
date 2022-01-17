@@ -1,4 +1,4 @@
-package com.jh.s3.ex1;
+package com.jh.s3.ex1.member;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -17,7 +17,7 @@ public class MemberData {
 		this.data = this.data + "id2 - pw2 - name2 - name2@naver.com-53-";
 		this.data = this.data + "id3 - pw3 - name3 - name3@daum.net-45-";
 		this.data = this.data + "id4 - pw4 - name4 - name4@daum.net-12-";
-		System.out.println(this.data);
+	//	System.out.println(this.data);
 
 	}
 

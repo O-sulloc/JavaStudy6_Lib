@@ -1,4 +1,4 @@
-package com.jh.s3.ex1;
+package com.jh.s3.ex1.member;
 
 public class MemberDTO {
 	// 멤버변수의 접근지정자는 private으로 선언하삼
